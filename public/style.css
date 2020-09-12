@@ -1,0 +1,83 @@
+:root {
+    --bg-color: #1f1f1f;
+    --primary-color: #e29300;
+    --primary-color-shadow: #e2930036;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: var(--bg-color);
+    height: 90vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    height: 100%;
+}
+
+.container header {
+    color: white;
+    margin: 2rem 0;
+    letter-spacing: .03rem;
+    font-weight: 500;
+    padding-bottom: .4rem;
+    border-bottom: 1px solid var(--primary-color);
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.075);
+}
+
+.container main {
+    font-size: 3rem;
+    color: #f5f5f5;
+}
+
+.container main .time {
+    display: flex;
+    justify-content: center;
+}
+
+.container main .select-time input,
+.container main .select-time select {
+    padding: .5rem;
+    border-radius: .2rem;
+    border: 1px solid var(--primary-color);
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.container main .select-time select option {
+    color: black;
+}
+
+.container main .select-time input,
+.container main .select-time select:focus {
+    border: 2px solid var(--primary-color);
+    outline: none;
+    box-shadow: 3px 3px 3px var(--primary-color-shadow);
+}
+
+.container main .start-timer {
+    display: flex;
+    margin: 2rem auto;
+    padding: .5rem 2rem;
+    border-radius: .2rem;
+    border: 1px solid var(--primary-color);
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s;
+}
+
+.container main .start-timer:hover {
+    padding: .5rem 3rem;
+}

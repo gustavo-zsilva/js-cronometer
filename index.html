@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/style.css">
+    <title>Cronometer</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>
+                Cronômetro
+            </h1>
+        </header>
+
+        <main>
+            <div class="time">
+                <p>
+                    <span class="hours">0</span>h
+                    <span class="minutes">0</span>min
+                    <span class="seconds">0</span>s
+                </p>
+            </div>
+            <div class="select-time">
+                <input type="number" class="hours-input get" placeholder="Horas">
+                <select name="minutos" class="minutos base-sixty get">
+                    <option value="0" selected>
+                        Minutos
+                    </option>
+                </select>
+                <select name="segundos" class="segundos base-sixty get">
+                    <option value="0" selected>
+                        Segundos
+                    </option>
+                </select>
+            </div>
+
+            <button class="start-timer">Start Timer</button>
+        </main>
+    </div>
+
+    <script src="./src/main.js"></script>
+</body>
+</html>
